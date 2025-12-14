@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const MBTI_TYPES = [
     "ISTJ", "ISFJ", "INFJ", "INTJ", 
     "ISTP", "ISFP", "INFP", "INTP", 
@@ -930,3 +932,5 @@ function drawRelationshipMap() {
         ctx.fillText(node.char.name, node.x, node.y);
     });
 }
+
+});
