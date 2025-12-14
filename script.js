@@ -55,11 +55,11 @@ const ACTIONS = [
     { id: 'cooking', name: '요리', place: 'apt', text: ['{food}을(를) 만들어 먹었다', '새로운 {food} 레시피를 시도했다'] },
     { id: 'work', name: '업무', place: 'company', text: ['보고서를 작성했다', '회의에 참석했다', '서무 업무를 했다', '티타임을 가졌다'] },
     { id: 'study', name: '공부', place: 'school', text: ['{study} 전공 서적을 읽었다', '과제를 수행했다', '시험 공부를 했다'] },
-    { id: 'gathering', name: '모임', place: 'cafe', text: ['{topic}에 대해 수다를 떨었다', '커피를 마시며 쉬었다', '인생 상담을 했다'] },
-    { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 만화책을 봤다'] },
-    { id: 'eat', name: '식사', place: 'restaurant', text: ['{food}을(를) 사 먹었다', '배부르게 밥을 먹었다'] },
-    { id: 'shop', name: '쇼핑', place: 'mart', text: ['장을 봤다', '생필품을 샀다', '충동구매를 했다', '할인 상품을 샀다'] },
-    { id: 'walk', name: '산책', place: 'apt', text: ['복도를 걸어다녔다', '단지 내를 산책했다', '바람을 쐬었다'] },
+    { id: 'gathering', name: '모임', place: 'cafe', text: ['{topic}에 대해 수다를 떨었다', '차를 마시며 쉬었다', '인생 상담을 했다'] },
+    { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 책을 봤다'] },
+    { id: 'eat', name: '식사', place: 'restaurant', text: ['{food}을(를) 사 먹었다', '적당하게 밥을 먹었다'] },
+    { id: 'shop', name: '쇼핑', place: 'mart', text: ['쇼핑을 했다', '사치품을 샀다', '정장을 맞췄다', '콜렉션을 감상했다'] },
+    { id: 'walk', name: '산책', place: 'apt', text: ['복도를 걸어다녔다', '사색의 정원을 산책했다', '바람을 쐬었다'] },
     { id: 'travel', name: '여행', place: 'travel', text: ['{destination}에서 즐거운 시간을 보냈다', '{destination}의 맛집을 탐방했다', '{destination}의 풍경을 구경했다'] }
 ];
 
@@ -934,6 +934,7 @@ function drawRelationshipMap() {
 }
 
 });
+
 
 
 
