@@ -58,7 +58,7 @@ const ACTIONS = [
     { id: 'gathering', name: '모임', place: 'cafe', text: ['{topic}에 대해 수다를 떨었다', '차를 마시며 쉬었다', '인생 상담을 했다'] },
     { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 책을 봤다'] },
     { id: 'eat', name: '식사', place: 'restaurant', text: ['{food}을(를) 사 먹었다', '적당하게 밥을 먹었다'] },
-    { id: 'shop', name: '쇼핑', place: 'mart', text: ['장을 봤다', '생필품을 샀다', '충동구매를 했다', '할인 상품을 샀다'] },
+    { id: 'shop', name: '쇼핑', place: 'mart', text: ['쇼핑을 했다', '사치품을 샀다', '충동구매를 했다', '셀러의 콜렉션을 감상했다'] },
     { id: 'walk', name: '산책', place: 'apt', text: ['복도를 걸어다녔다', '사색의 정원을 산책했다', '바람을 쐬었다'] },
     { id: 'travel', name: '여행', place: 'travel', text: ['{destination}에서 즐거운 시간을 보냈다', '{destination}의 유적을 탐방했다', '{destination}의 풍경을 구경했다'] }
 ];
@@ -938,3 +938,4 @@ window.nextDay = nextDay;
 window.resetAll = resetAll;
 
     });
+
