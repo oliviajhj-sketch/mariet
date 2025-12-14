@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const MBTI_TYPES = [
     "ISTJ", "ISFJ", "INFJ", "INTJ", 
     "ISTP", "ISFP", "INFP", "INTP", 
@@ -918,3 +920,21 @@ function drawRelationshipMap() {
         ctx.fillText(node.char.name, node.x, node.y);
     });
 }
+
+window.closeMenus = closeMenus;
+window.switchTab = switchTab;
+window.toggleTheme = toggleTheme;
+window.addCharacter = addCharacter;
+window.removeCharacter = removeCharacter;
+window.toggleExportMenu = toggleExportMenu;
+window.exportData = exportData;
+window.importData = importData;
+window.openRelationshipMap = openRelationshipMap;
+window.closeRelationshipMap = closeRelationshipMap;
+window.toggleAffectionMode = toggleAffectionMode;
+window.closeModal = closeModal;
+window.clearLogs = clearLogs;
+window.nextDay = nextDay;
+window.resetAll = resetAll;
+
+    });
