@@ -35,25 +35,25 @@ const PLACES = [
     { id: 'cafe', name: '카페', type: 'out' },
     { id: 'school', name: '학교', type: 'out' },
     { id: 'restaurant', name: '레스토랑', type: 'out' },
-    { id: 'company', name: '회사', type: 'out' },
+    { id: 'company', name: '모란회', type: 'out' },
     { id: 'travel', name: '여행지', type: 'travel' }
 ];
 
 const WORD_SETS = {
     genre: ['SF', '로맨스', '추리', '무협', '판타지', '공포', '역사', '자기계발'],
     food: ['비프스테이크', '포크스테이크', '파스타', '샐러드볼', '당근', '중화음식', '디저트', '샐러드', '애프터눈티'],
-    hobby: ['유튜브', '넷플릭스', '게임', '음악', '영화', '홈트레이닝'],
-    study: ['수학', '영어', '코딩', '철학', '경제', '역사', '디자인'],
-    topic: ['연예인', '주식', '날씨', '취미', '과거', '미래', '고민', '맛집'],
+    hobby: ['합주', '악기연습', '대련', '음악', '영화감상', '연극'],
+    study: ['수학', '영어', '문학', '철학', '역법', '역사', '제왕학'],
+    topic: ['후보자', '경연', '날씨', '취미', '과거', '미래', '고민', '시련'],
     book: ['만화책', '잡지', '소설책', '에세이'],
-    destination: ['제주도', '부산', '강릉', '여수', '대전', '오사카', '도쿄', '파리', '런던', '하와이', '방콕']
+    destination: ['1지구', '2지구', '3지구', '4지구', '5지구', '6지구', '7지구', '8지구', '왕성', '대저택', '시내내']
 };
 
 const ACTIONS = [
     { id: 'rest', name: '휴식', place: 'apt', text: ['침대에서 뒹굴거렸다', '낮잠을 잤다', '멍하니 창밖을 보았다', '스마트폰을 했다'] },
     { id: 'leisure', name: '여가', place: 'apt', text: ['{hobby}을(를) 즐겼다', '새로운 취미를 찾았다'] },
     { id: 'cooking', name: '요리', place: 'apt', text: ['{food}을(를) 만들어 먹었다', '새로운 {food} 레시피를 시도했다'] },
-    { id: 'work', name: '업무', place: 'company', text: ['보고서를 작성했다', '회의에 참석했다', '야근을 했다', '메일을 확인했다'] },
+    { id: 'work', name: '업무', place: 'company', text: ['보고서를 작성했다', '회의에 참석했다', '서무 업무를 했다', '티타임을 가졌다'] },
     { id: 'study', name: '공부', place: 'school', text: ['{study} 전공 서적을 읽었다', '과제를 수행했다', '시험 공부를 했다'] },
     { id: 'gathering', name: '모임', place: 'cafe', text: ['{topic}에 대해 수다를 떨었다', '커피를 마시며 쉬었다', '인생 상담을 했다'] },
     { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 만화책을 봤다'] },
@@ -934,5 +934,6 @@ function drawRelationshipMap() {
 }
 
 });
+
 
 
