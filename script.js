@@ -35,32 +35,32 @@ const PLACES = [
     { id: 'cafe', name: '카페', type: 'out' },
     { id: 'school', name: '학교', type: 'out' },
     { id: 'restaurant', name: '레스토랑', type: 'out' },
-    { id: 'company', name: '회사', type: 'out' },
+    { id: 'company', name: '모란회', type: 'out' },
     { id: 'travel', name: '여행지', type: 'travel' }
 ];
 
 const WORD_SETS = {
-    genre: ['SF', '로맨스', '추리', '무협', '판타지', '공포', '역사', '자기계발'],
-    food: ['김치찌개', '된장찌개', '파스타', '스테이크', '라면', '치킨', '삼겹살', '샐러드', '떡볶이'],
-    hobby: ['유튜브', '넷플릭스', '게임', '음악', '영화', '홈트레이닝'],
-    study: ['수학', '영어', '코딩', '철학', '경제', '역사', '디자인'],
-    topic: ['연예인', '주식', '날씨', '취미', '과거', '미래', '고민', '맛집'],
+    genre: ['SF', '로맨스', '추리', '무협', '판타지', '공포', '역사'],
+    food: ['스파게티', '당근', '파스타', '비프 스테이크', '마약', '포크 스테이크', '디저트', '브런치', '브리네집에서해준특급만찬급식'],
+    hobby: ['연극', '합주', '연구', '음악', '영화', '대련'],
+    study: ['수학', '영어', '코딩', '철학', '경제', '역사'],
+    topic: ['경연', '날씨', '취미', '과거', '미래', '고민', '시련', '시험'],
     book: ['만화책', '잡지', '소설책', '에세이'],
-    destination: ['제주도', '부산', '강릉', '여수', '대전', '오사카', '도쿄', '파리', '런던', '하와이', '방콕']
+    destination: ['1지구', '2지구', '0지구', '3지구', '4지구', '5지구', '6지구', '7지구', '8지구', '왕성', '대저택', '유적지']
 };
 
 const ACTIONS = [
     { id: 'rest', name: '휴식', place: 'apt', text: ['침대에서 뒹굴거렸다', '낮잠을 잤다', '멍하니 창밖을 보았다', '스마트폰을 했다'] },
     { id: 'leisure', name: '여가', place: 'apt', text: ['{hobby}을(를) 즐겼다', '새로운 취미를 찾았다'] },
     { id: 'cooking', name: '요리', place: 'apt', text: ['{food}을(를) 만들어 먹었다', '새로운 {food} 레시피를 시도했다'] },
-    { id: 'work', name: '업무', place: 'company', text: ['보고서를 작성했다', '회의에 참석했다', '야근을 했다', '메일을 확인했다'] },
+    { id: 'work', name: '업무', place: 'company', text: ['보고서를 작성했다', '회의에 참석했다', '티타임을 가졌다'] },
     { id: 'study', name: '공부', place: 'school', text: ['{study} 전공 서적을 읽었다', '과제를 수행했다', '시험 공부를 했다'] },
     { id: 'gathering', name: '모임', place: 'cafe', text: ['{topic}에 대해 수다를 떨었다', '커피를 마시며 쉬었다', '인생 상담을 했다'] },
-    { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 만화책을 봤다'] },
-    { id: 'eat', name: '식사', place: 'restaurant', text: ['{food}을(를) 사 먹었다', '배부르게 밥을 먹었다'] },
-    { id: 'shop', name: '쇼핑', place: 'mart', text: ['장을 봤다', '생필품을 샀다', '충동구매를 했다', '할인 상품을 샀다'] },
-    { id: 'walk', name: '산책', place: 'apt', text: ['복도를 걸어다녔다', '단지 내를 산책했다', '바람을 쐬었다'] },
-    { id: 'travel', name: '여행', place: 'travel', text: ['{destination}에서 즐거운 시간을 보냈다', '{destination}의 맛집을 탐방했다', '{destination}의 풍경을 구경했다'] }
+    { id: 'read', name: '독서', place: 'apt', text: ['{genre} 소설을 읽었다', '{genre} 책을 봤다'] },
+    { id: 'eat', name: '식사', place: 'restaurant', text: ['{food}을(를) 즐겼다', '적당히 밥을 먹었다'] },
+    { id: 'shop', name: '쇼핑', place: 'mart', text: ['장을 봤다', '사치품을 샀다', '충동구매를 했다', '할인 상품을 샀다', '셀러의 콜렉션을 구경했다'] },
+    { id: 'walk', name: '산책', place: 'apt', text: ['복도를 걸어다녔다', '교내를 산책했다', '정원에서 바람을 쐬었다'] },
+    { id: 'travel', name: '여행', place: 'travel', text: ['{destination}에서 즐거운 시간을 보냈다', '{destination}의 유적을 탐방했다', '{destination}의 풍경을 구경했다'] }
 ];
 
 const EVENTS = [
@@ -133,7 +133,7 @@ function getRelationshipLabel(score, specialStatus) {
     if (specialStatus === 'lover') return "💖 연인";
     if (score <= -80) return "원수";
     if (score <= -60) return "혐오";
-    if (score <= -40) return "적대";
+    if (score <= -40) return "경멸";
     if (score <= -20) return "불편";
     if (score < 0) return "서먹";
     if (score === 0) return "얼굴만 아는 사람";
@@ -922,3 +922,4 @@ function drawRelationshipMap() {
 
 }
     });
+
