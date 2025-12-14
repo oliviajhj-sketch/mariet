@@ -867,6 +867,9 @@ function drawRelationshipMap() {
         return;
     }
 
+    window.switchTab = switchTab;
+    window.closeMenus = closeMenus;
+
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
     const radius = Math.min(centerX, centerY) * 0.8;
@@ -934,6 +937,7 @@ function drawRelationshipMap() {
 }
 
 });
+
 
 
 
